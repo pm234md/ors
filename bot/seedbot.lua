@@ -518,9 +518,9 @@ will return group ban list
 🔵 دریافت لینک گروه 🔴
 !rules
 🔵 دریافت قوانین گروه 🔴
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
+!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tgservice}
 🔵 قفل کردن تنظیمات 🔴
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
+!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tgservice]
 🔵 بازکردن قفل تنظیمات گروه 🔴
 !mute [all|audio|gifs|photo|video|service]
 🔵 بیصدا کردن فرمت ها 🔴
@@ -534,14 +534,12 @@ will return group ban list
 🔵 مشاهده تنظیمات گروه 🔴
 !mutelist
 🔵 لیست افراد بیصدا 🔴
-!silent [username]
+!mute [username]
 🔵 بیصدا کردن شخص در گروه 🔴
-!silentlist
+!mutelist
 🔵 لیست افراد بیصدا 🔴
 !banlist
 🔵 مشاهده لیست مسدود شده ها 🔴
-!clean [rules|about|modlist|silentlist|badwords]
-🔵 پاک کردن [مدیران ,قوانین ,متن گروه,لیست بیصداها, لیست کلمات غیرمجاز] 🔴
 !del
 🔵 پاک کردن پیام با ریپلی 🔴
 !clean msg [value]
