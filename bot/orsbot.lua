@@ -257,7 +257,7 @@ function create_config( )
     about_text = [[CREATOR:
     @Dr_Root]],
     help_text_realm = [[
-Realm Commands:
+Realm Commands:.
 
 !creategroup [Name]
 Create a group
