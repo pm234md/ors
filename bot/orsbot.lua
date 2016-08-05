@@ -232,7 +232,7 @@ function create_config( )
     about_text = [[CRETOR:
     @Dr_Root]],
     help_text_realm = [[
-Realm Commands:
+Realm Commands:.
 
 !creategroup [name]
 Create a group
