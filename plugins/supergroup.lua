@@ -1,4 +1,4 @@
-﻿--Begin supergrpup.lua
+--Begin supergrpup.lua
 --Check members #Add supergroup
 local function check_member_super(cb_extra, success, result)
   local receiver = cb_extra.receiver
@@ -565,8 +565,10 @@ end
 		end
 	end
   local settings = data[tostring(target)]['settings']
-  local text = "⚙SuperGroup settings⚙:\n🔐lock links: "..settings.lock_link.."\n🔐Lock flood: "..settings.flood.."\n🔐Flood sensitivity: "..NUM_MSG_MAX.."\n➖➖➖➖➖➖➖➖➖➖➖➖\n🔐Lock spam "..settings.lock_spam.."\n🔐Lock Arabic: "..settings.lock_arabic.."\n🔐Lock Member: "..settings.lock_member.."\n➖➖➖➖➖➖➖➖➖➖➖➖\n🔐Lock RTL: "..settings.lock_rtl.."\n🔐Lock Tgservice : "..settings.lock_tgservice.."\n🔐Lock sticker: "..settings.lock_sticker.."\n➖➖➖➖➖➖➖➖➖➖➖➖\n💢Public: "..settings.public.."\nStrict settings: "..settings.strict.."\n💠Grouptype:supergroup💠\n\n@Gp_owner"
-  return text
+local text = "⚙SuperGroup settings⚙:\n🔐lock links: "..settings.lock_link.."\n🔐Lock flood: "..settings.flood.."\n🔐Flood sensitivity: "..NUM_MSG_MAX.."\n➖➖➖➖➖➖➖➖➖➖➖➖\n🔐Lock spam "..settings.lock_spam.."\n🔐Lock Arabic: "..settings.lock_arabic.."\n🔐Lock Member: "..settings.lock_member.."\n➖➖➖➖➖➖➖➖➖➖➖➖\n🔐Lock RTL: "..settings.lock_rtl.."\n🔐Lock Tgservice : "..settings.lock_tgservice.."\n🔐Lock sticker: "..settings.lock_sticker.."\n➖➖➖➖➖➖➖➖➖➖➖➖\n💢Public: "..settings.public.."\nStrict settings: "..settings.strict.."\n💠Grouptype:supergroup💠\n\n@Gp_owner"
+local text = string.gsub(text, "yes", "✔️")
+local text = string.gsub(text, "no", "❌")
+return text
 end
 
 local function promote_admin(receiver, member_username, user_id)
@@ -2097,4 +2099,4 @@ return {
   pre_process = pre_process
 }
 --End supergrpup.lua
---By @Rondoozle
+--By @Dr_Root
